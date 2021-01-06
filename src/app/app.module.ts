@@ -18,6 +18,7 @@ import { ButtonSizeComponent } from './button-size/button-size.component';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { DisabledComponent } from './disabled/disabled.component';
 import { ButtonButtonGroupComponent } from './button-button-group/button-button-group.component';
+import { ButtonLoadingComponent } from './button-loading/button-loading.component';
 
 registerLocaleData(zh);
 
@@ -27,6 +28,7 @@ registerLocaleData(zh);
     ButtonSizeComponent,
     DisabledComponent,
     ButtonButtonGroupComponent,
+    ButtonLoadingComponent,
   ],
   imports: [
     BrowserModule,
