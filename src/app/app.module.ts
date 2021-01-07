@@ -19,6 +19,8 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { DisabledComponent } from './disabled/disabled.component';
 import { ButtonButtonGroupComponent } from './button-button-group/button-button-group.component';
 import { ButtonLoadingComponent } from './button-loading/button-loading.component';
+import { ButtonMultipleComponent } from './button-multiple/button-multiple.component';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 
 registerLocaleData(zh);
 
@@ -29,6 +31,7 @@ registerLocaleData(zh);
     DisabledComponent,
     ButtonButtonGroupComponent,
     ButtonLoadingComponent,
+    ButtonMultipleComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ registerLocaleData(zh);
     NzLayoutModule,
     NzMenuModule,
     NzButtonModule,
-    NzRadioModule 
+    NzRadioModule,
+    NzDropDownModule 
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]
