@@ -1,0 +1,7 @@
+[nz-icon] {
+  margin-right: 6px;
+  font-size: 24px;
+}
+.icons-list > i:nth-last-of-type(1) {
+  color: blue;
+}

@@ -21,6 +21,14 @@ import { ButtonButtonGroupComponent } from './button-button-group/button-button-
 import { ButtonLoadingComponent } from './button-loading/button-loading.component';
 import { ButtonMultipleComponent } from './button-multiple/button-multiple.component';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { ButtonGhostComponent } from './button-ghost/button-ghost.component';
+import { ButtonBlockComponent } from './button-block/button-block.component';
+import { ButtonDangerComponent } from './button-danger/button-danger.component';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { TestComponentComponent } from './test-component/test-component.component';
+import { IconBasicComponent } from './icon-basic/icon-basic.component';
+import { IconCustomComponent } from './icon-custom/icon-custom.component';
+import { IconIconfontComponent } from './icon-iconfont/icon-iconfont.component';
 
 registerLocaleData(zh);
 
@@ -32,6 +40,13 @@ registerLocaleData(zh);
     ButtonButtonGroupComponent,
     ButtonLoadingComponent,
     ButtonMultipleComponent,
+    ButtonGhostComponent,
+    ButtonBlockComponent,
+    ButtonDangerComponent,
+    TestComponentComponent,
+    IconBasicComponent,
+    IconCustomComponent,
+    IconIconfontComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +59,8 @@ registerLocaleData(zh);
     NzMenuModule,
     NzButtonModule,
     NzRadioModule,
-    NzDropDownModule 
+    NzDropDownModule,
+    NzIconModule 
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]
