@@ -14,42 +14,34 @@ import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzButtonModule } from 'ng-zorro-antd/button';
-import { ButtonSizeComponent } from './button-size/button-size.component';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
-import { DisabledComponent } from './disabled/disabled.component';
-import { ButtonButtonGroupComponent } from './button-button-group/button-button-group.component';
-import { ButtonLoadingComponent } from './button-loading/button-loading.component';
-import { ButtonMultipleComponent } from './button-multiple/button-multiple.component';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
-import { ButtonGhostComponent } from './button-ghost/button-ghost.component';
-import { ButtonBlockComponent } from './button-block/button-block.component';
-import { ButtonDangerComponent } from './button-danger/button-danger.component';
 import { NzIconModule } from 'ng-zorro-antd/icon';
-import { TestComponentComponent } from './test-component/test-component.component';
-import { IconBasicComponent } from './icon-basic/icon-basic.component';
-import { IconCustomComponent } from './icon-custom/icon-custom.component';
-import { IconIconfontComponent } from './icon-iconfont/icon-iconfont.component';
-
+import { TypographyTitleComponent } from './typography-title/typography-title.component';
+import { NzTypographyModule } from 'ng-zorro-antd/typography';
+import { TypographyInteractiveComponent } from './typography-interactive/typography-interactive.component';
+import { TypographyTextComponent } from './typography-text/typography-text.component';
+import { TypographyEllipsisComponent } from './typography-ellipsis/typography-ellipsis.component';
+import { TypographySuffixComponent } from './typography-suffix/typography-suffix.component';
+import { NzSliderModule } from 'ng-zorro-antd/slider';
+import { DividerHorizontalComponent } from './divider-horizontal/divider-horizontal.component';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { DividerOrientationComponent } from './divider-orientation/divider-orientation.component';
 registerLocaleData(zh);
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonSizeComponent,
-    DisabledComponent,
-    ButtonButtonGroupComponent,
-    ButtonLoadingComponent,
-    ButtonMultipleComponent,
-    ButtonGhostComponent,
-    ButtonBlockComponent,
-    ButtonDangerComponent,
-    TestComponentComponent,
-    IconBasicComponent,
-    IconCustomComponent,
-    IconIconfontComponent,
+    TypographyTitleComponent,
+    TypographyInteractiveComponent,
+    TypographyTextComponent,
+    TypographyEllipsisComponent,
+    TypographySuffixComponent,
+    DividerHorizontalComponent,
+    DividerOrientationComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
@@ -60,7 +52,10 @@ registerLocaleData(zh);
     NzButtonModule,
     NzRadioModule,
     NzDropDownModule,
-    NzIconModule 
+    NzIconModule,
+    NzTypographyModule,
+    NzSliderModule,
+    NzDividerModule
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]
